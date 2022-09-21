@@ -1,5 +1,6 @@
 package com.example.demo.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -23,6 +24,8 @@ public class Employee {
 	public void setId(int id) {
 		this.id = id;
 	}
+	
+	@Column(name = "EmpName")
 	public String getName() {
 		return name;
 	}
